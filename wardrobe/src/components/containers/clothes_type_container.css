@@ -1,0 +1,40 @@
+.clothes_type_container {
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.clothesTypeContainerChild {
+    width: 100%;
+    height: 50dvh;
+    padding: 3rem;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.clothesTypeContainerChild:hover {
+    border-radius: 2rem;
+    background-size: 150%;
+}
+
+.clothesTypeContainerText {
+    text-align: center;
+    font-size: 5rem;
+    color: #2E1503;
+}
+
+.wrapper{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

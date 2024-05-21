@@ -12,6 +12,15 @@
     overflow-x: clip;
 }
 
+.LogoSmall{
+    height: 4rem;
+    width: 4rem;
+    background-image: url(./images/ballcapLogoSmall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1rem;
+}
+
 .App {
     background-color: #FFF9A2;
     margin: 0;

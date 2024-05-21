@@ -1,17 +1,34 @@
 import React from 'react';
 import {NavBody, NavSelector} from "./components/navigation";
-import {HeroContainer} from "./components/containers";
+import {HeroContainer, ClothesTypeContainer, ImageGallery} from "./components/containers";
+import flowerHatImage from "./images/hatFlower.png"
+import shirtPlaceHolder from "./images/shirtPlaceHolder.png"
+import shoesPlaceHolder from "./images/shoesPlaceHolder.jpg"
 import './App.css';
 
 function App() {
+    const clothesSelectorImages:React.CSSProperties[] = [
+        {backgroundImage: `url(${flowerHatImage})`},
+        {backgroundImage: `url(${shirtPlaceHolder})`},
+        {backgroundImage: `url(${shoesPlaceHolder})`}
+    ]
+
+    const clothesImageHatsUrls:string[] = [
+        "./"
+    ]
+
   return (
     <div className="App">
       <NavBody>
-        <p>Hello World!</p>
+        <a className={"LogoSmall"} href="/"></a>
           <NavSelector text={["Hats", "Shirts", "Shoes"]}/>
       </NavBody>
         <div className={'mainContainer'}>
             <HeroContainer text={"Find Your Design"}/>
+        </div>
+        <ClothesTypeContainer text={["Hats", "Shirts", "Shoes"]} style={clothesSelectorImages}/>
+        <div className={'GalleryContainer'}>
+
         </div>
     </div>
   );

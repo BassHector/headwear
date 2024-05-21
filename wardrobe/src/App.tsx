@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import {NavBody, NavSelector} from "./components/navigation";
+import {HeroContainer} from "./components/containers";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBody>
+        <p>Hello World!</p>
+          <NavSelector text={["Hats", "Shirts", "Shoes"]}/>
+      </NavBody>
+        <div className={'mainContainer'}>
+            <HeroContainer text={"Find Your Design"}/>
+        </div>
     </div>
   );
 }

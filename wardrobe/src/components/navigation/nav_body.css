@@ -1,0 +1,36 @@
+.NavBody {
+    height: auto;
+}
+
+.NavContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    width: 100dvw;
+}
+
+.NavBorderBottom{
+    min-height: 2px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: black;
+}
+
+.menuButton{
+    padding: 1rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.menuButton:hover{
+    color: gray;
+}
+
+.selector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

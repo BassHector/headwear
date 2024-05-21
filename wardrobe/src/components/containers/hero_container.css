@@ -1,0 +1,25 @@
+.heroBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/pile_of_hats.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.heroBannerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: Bold;
+    color: #FFF9A2;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+}
